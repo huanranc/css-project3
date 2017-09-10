@@ -1,0 +1,228 @@
+body {
+  background: $bg-color;
+  padding: 5%;
+}
+
+h2,
+h3 {
+  font-family: "tablet-gothic-condensed", "arial narrow", arial, verdana, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-sizing: border-box;
+  background: $container-bg-color;
+  header{
+    padding: 8%;
+    box-sizing: border-box;
+    color:$site-title-color;
+    p:first-child{
+      display: flex;
+      align-items: center;
+      justify-content:center;
+      width: 33.3%;
+      padding: 0.75em 1em;
+      font-weight: 300;
+      word-spacing:0.1rem;
+      background-color: $site-title-h1-bg;
+    }
+    h1{
+      margin-top: 2rem;
+      font-size: 7rem;
+      line-height: 1;
+    }
+    p{
+      margin: 0;
+      padding: 0;
+      line-height: 1;
+      padding: 1.15rem .25rem;
+      font-size: 1.45em;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .header-message{
+      padding-top: 15%;
+    }
+    p:last-child{
+      padding-bottom: 15%;
+      border-top: 1px solid $site-border-color;
+      a{
+        padding: 1px;
+        color: $site-title-color;
+        text-decoration: none;
+        border-bottom: 1px solid $site-a-border-color;
+        &:hover{
+          border-color: $site-a-border-color-hover;
+        }
+      }
+    }
+  }
+}
+main{
+  width: 67%;
+}
+
+article{
+  position: relative;
+  color:$gray;
+  h3{
+    font-size: 2.3rem;
+    font-weight: 100;
+    margin: 1rem 0;
+  }
+  p{
+    font-size: 1em;
+    margin: 1.2rem 0;
+    line-height: 1.5;
+  }
+  a{
+    padding: 1px;
+    color: $site-title-color;
+    text-decoration: none;
+    border-bottom: 1px solid $site-a-border-color;
+    &:hover{
+      border-color: $site-a-border-color-hover;
+    }
+  }
+}
+
+.introduced{
+  width: 68%;
+  padding: 4rem 8rem;
+  margin: 0 -8%;
+  background: rgba($white,0.9);
+}
+
+.article-container{
+  display: flex;
+  flex-direction: row;
+
+}
+
+.purpose{
+  width: 80%;
+  padding: 8rem;
+  box-sizing: border-box;
+  color:$site-title-color;
+}
+
+.participation{
+  position: absolute;
+  right: 10%;  
+  z-index: 99;
+  width: 40%;
+  margin-top: 7%;
+  padding: 3rem;
+  box-sizing: border-box;
+  color:$site-title-color;
+  background: rgba($red,.8);
+  a{
+    border-color: $participation-a-color;
+    &:hover{
+      border-color:$white;
+    }
+  }
+}
+
+.benefits{
+  width: 40%;
+  margin-top: 15%;
+  margin-left: 8%;
+  margin-bottom: 20%;
+  padding: 3rem;
+  box-sizing: border-box;
+  background: rgba($white,.9);
+}
+
+.requirements{
+  position: absolute;
+  right: 10%;
+  z-index: 999;
+  width: 47.25rem;
+  padding:5em 3rem;
+  box-sizing: border-box;
+  background: rgba($white,.9);
+  p:last-child{
+    padding-top: 1.2rem;
+    border-top: 1px solid $site-border-color;
+    text-transform: uppercase; 
+  }
+  a{
+    color:$gray;
+    border-color: $requirements-border-color;
+  }
+}
+
+footer{
+  width: 60%;
+  padding: 1.25rem 2rem;
+  margin-top: 14.2%;
+  margin-bottom: 10%;
+  margin-left: 8%;
+  background: $footer-bg;
+  a{
+    padding: 1px;
+    color: $gray;
+    text-decoration: none;
+    border-bottom: 1px solid $footer-border-color;
+    &:hover{
+      border-color: $site-a-border-color-hover;
+    }
+  }
+}
+
+aside {
+  position: relative;
+  width: 33%;
+  .aside-list {
+    z-index: 11;
+    position: absolute;
+    top:6rem;
+    left: 0;
+    width: 100%;
+    bottom: auto;
+    background:rgba($aside-bg,.9); 
+    .aside-list-item {
+      margin:  6rem 4rem;
+    }
+    h3 {
+      font-family: "tablet-gothic-condensed", "arial narrow", arial, verdana, sans-serif;
+      font-weight: 100;
+      font-size: 2.25rem;
+      margin: 1rem 0;
+    }
+    a {
+      padding: 1px;
+      border-bottom: 1px solid $footer-border-color;
+      line-height: 1.5;
+      color: $gray;
+      text-decoration: none;
+      &:hover{
+        border-color: $site-a-border-color-hover;
+    }
+  }
+    ul {
+      padding: 0;
+    }
+    li {
+      display: block;
+      margin: 1rem 0;
+      color: $footer-border-color;
+      font-size: 1rem;
+      /*font-weight: 400;*/
+      font-weight: 600;
+    }
+  }
+}
+
+aside::after{
+  content: "";
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 30%;
+  background: $bg-after-color;
+}
