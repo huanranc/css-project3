@@ -13,30 +13,28 @@ h3 {
   box-sizing: border-box;
   background: #77c4d3; }
   .container header {
-    padding: 8%;
+    padding: 8% 8% 3% 8%;
     box-sizing: border-box;
     color: #ffffff; }
     .container header p:first-child {
-      display: flex;
+      display: inline-flex;
       align-items: center;
       justify-content: center;
-      width: 33.3%;
-      padding: 0.75em 1em;
+      padding: 2% 3.2%;
+      font-size: 2.35rem;
       font-weight: 300;
-      word-spacing: 0.1rem;
       background-color: #ea2e49; }
     .container header h1 {
-      margin-top: 2rem;
+      margin-top: 6%;
       font-size: 7rem;
       line-height: 1; }
     .container header p {
       margin: 0;
       padding: 0;
-      line-height: 1;
-      padding: 1.15rem .25rem;
+      line-height: 1.5;
+      padding: 3% 0;
       font-size: 1.45em;
-      text-transform: uppercase;
-      letter-spacing: 1px; }
+      text-transform: uppercase; }
     .container header .header-message {
       padding-top: 15%; }
     .container header p:last-child {
@@ -55,13 +53,14 @@ main {
 
 article {
   position: relative;
+  font-size: 1.25em;
+  line-height: 1.5;
   color: #333; }
   article h3 {
     font-size: 2.3rem;
     font-weight: 100;
     margin: 1rem 0; }
   article p {
-    font-size: 1em;
     margin: 1.2rem 0;
     line-height: 1.5; }
   article a {
@@ -73,28 +72,27 @@ article {
       border-color: #ea2e49; }
 
 .introduced {
-  width: 68%;
-  padding: 4rem 8rem;
-  margin: 0 -8%;
+  padding: 5% 5% 5% 15%;
+  margin-right: 8%;
+  margin-left: -8%;
   background: rgba(255, 255, 255, 0.9); }
+
+.article-main {
+  padding: 15% 8% 0; }
 
 .article-container {
   display: flex;
   flex-direction: row; }
 
 .purpose {
-  width: 80%;
-  padding: 8rem;
+  padding: 8%;
   box-sizing: border-box;
   color: #ffffff; }
 
 .participation {
-  position: absolute;
-  right: 10%;
-  z-index: 99;
-  width: 40%;
-  margin-top: 7%;
-  padding: 3rem;
+  z-index: 999;
+  padding: 5%;
+  margin-right: -60%;
   box-sizing: border-box;
   color: #ffffff;
   background: rgba(234, 46, 73, 0.8); }
@@ -104,20 +102,16 @@ article {
       border-color: #ffffff; }
 
 .benefits {
-  width: 40%;
+  padding: 8%;
   margin-top: 15%;
-  margin-left: 8%;
-  margin-bottom: 20%;
-  padding: 3rem;
+  margin-bottom: 30%;
   box-sizing: border-box;
   background: rgba(255, 255, 255, 0.9); }
 
 .requirements {
-  position: absolute;
-  right: 10%;
   z-index: 999;
-  width: 47.25rem;
-  padding: 5em 3rem;
+  padding: 8%;
+  margin-right: -60%;
   box-sizing: border-box;
   background: rgba(255, 255, 255, 0.9); }
   .requirements p:last-child {
@@ -130,13 +124,13 @@ article {
 
 footer {
   width: 60%;
-  padding: 1.25rem 2rem;
-  margin-top: 14.2%;
+  padding: 2rem 3rem;
   margin-bottom: 10%;
   margin-left: 8%;
+  font-size: 1.25rem;
   background: #eaf299; }
   footer a {
-    padding: 1px;
+    padding: 3px;
     color: #333;
     text-decoration: none;
     border-bottom: 1px solid #bbc27a; }
@@ -153,9 +147,11 @@ aside {
     left: 0;
     width: 100%;
     bottom: auto;
+    padding: 18% 16% 16%;
+    box-sizing: border-box;
     background: rgba(246, 247, 146, 0.9); }
     aside .aside-list .aside-list-item {
-      margin: 6rem 4rem; }
+      margin-bottom: 20%; }
     aside .aside-list h3 {
       font-family: "tablet-gothic-condensed", "arial narrow", arial, verdana, sans-serif;
       font-weight: 100;
@@ -175,7 +171,7 @@ aside {
       display: block;
       margin: 1rem 0;
       color: #bbc27a;
-      font-size: 1rem;
+      font-size: 1.25rem;
       /*font-weight: 400;*/
       font-weight: 600; }
 
@@ -187,3 +183,33 @@ aside::after {
   right: 0;
   width: 30%;
   background: rgba(51, 51, 51, 0.9); }
+
+@media screen and (max-width: 767px) {
+  aside::after {
+    display: none; }
+  .container {
+    flex-direction: column; }
+    .container header h1 {
+      font-size: 2.25rem;
+      line-height: 1.5; }
+    .container header p:first-child {
+      font-size: 1.25rem; }
+  main {
+    width: 100%; }
+  aside {
+    width: 100%; }
+  .article-container {
+    flex-direction: column; }
+  .participation {
+    margin-right: 0; }
+  .requirements {
+    margin-right: 0; }
+  .introduced {
+    margin: 0; }
+  .benefits {
+    margin: 0; }
+  .article-main {
+    padding: 0; }
+  aside .aside-list {
+    position: relative;
+    top: 0; } }

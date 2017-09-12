@@ -14,160 +14,171 @@ h3 {
   justify-content: space-between;
   box-sizing: border-box;
   background: $container-bg-color;
-  header{
-    padding: 8%;
+
+  header {
+    padding: 8% 8% 3% 8%;
     box-sizing: border-box;
     color:$site-title-color;
-    p:first-child{
-      display: flex;
+
+    p:first-child {
+      display: inline-flex;
       align-items: center;
-      justify-content:center;
-      width: 33.3%;
-      padding: 0.75em 1em;
+      justify-content: center;
+      padding: 2% 3.2%;
+      font-size: 2.35rem;
       font-weight: 300;
-      word-spacing:0.1rem;
       background-color: $site-title-h1-bg;
     }
-    h1{
-      margin-top: 2rem;
+
+    h1 {
+      margin-top: 6%;
       font-size: 7rem;
       line-height: 1;
     }
-    p{
+
+    p {
       margin: 0;
       padding: 0;
-      line-height: 1;
-      padding: 1.15rem .25rem;
+      line-height: 1.5;
+      padding: 3% 0;
       font-size: 1.45em;
       text-transform: uppercase;
-      letter-spacing: 1px;
     }
-    .header-message{
+
+    .header-message {
       padding-top: 15%;
     }
-    p:last-child{
+
+    p:last-child {
       padding-bottom: 15%;
       border-top: 1px solid $site-border-color;
-      a{
+
+      a {
         padding: 1px;
         color: $site-title-color;
         text-decoration: none;
         border-bottom: 1px solid $site-a-border-color;
-        &:hover{
+        &:hover {
           border-color: $site-a-border-color-hover;
         }
+
       }
+
     }
+
   }
+
 }
-main{
+main {
   width: 67%;
 }
 
-article{
+article {
   position: relative;
+  font-size: 1.25em;
+  line-height: 1.5;
   color:$gray;
-  h3{
+
+  h3 {
     font-size: 2.3rem;
     font-weight: 100;
     margin: 1rem 0;
   }
-  p{
-    font-size: 1em;
+  
+  p {
     margin: 1.2rem 0;
     line-height: 1.5;
   }
-  a{
+
+  a {
     padding: 1px;
     color: $site-title-color;
     text-decoration: none;
     border-bottom: 1px solid $site-a-border-color;
-    &:hover{
+    &:hover {
       border-color: $site-a-border-color-hover;
     }
+
   }
 }
 
-.introduced{
-  width: 68%;
-  padding: 4rem 8rem;
-  margin: 0 -8%;
+.introduced {
+  padding: 5% 5% 5% 15%;
+  margin-right: 8%;
+  margin-left: -8%;
   background: rgba($white,0.9);
 }
 
-.article-container{
-  display: flex;
-  flex-direction: row;
-
+.article-main {
+  padding: 15% 8% 0;
 }
 
-.purpose{
-  width: 80%;
-  padding: 8rem;
+.article-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.purpose {
+  padding: 8%;
   box-sizing: border-box;
   color:$site-title-color;
 }
 
-.participation{
-  position: absolute;
-  right: 10%;  
-  z-index: 99;
-  width: 40%;
-  margin-top: 7%;
-  padding: 3rem;
+.participation {
+  z-index:999;
+  padding: 5%;
+  margin-right: -60%;
   box-sizing: border-box;
   color:$site-title-color;
   background: rgba($red,.8);
-  a{
+
+  a {
     border-color: $participation-a-color;
-    &:hover{
+    &:hover {
       border-color:$white;
     }
   }
 }
 
-.benefits{
-  width: 40%;
+.benefits {
+  padding: 8%;
   margin-top: 15%;
-  margin-left: 8%;
-  margin-bottom: 20%;
-  padding: 3rem;
+  margin-bottom: 30%;
   box-sizing: border-box;
   background: rgba($white,.9);
 }
 
-.requirements{
-  position: absolute;
-  right: 10%;
+.requirements {
   z-index: 999;
-  width: 47.25rem;
-  padding:5em 3rem;
+  padding: 8%;
+  margin-right: -60%;
   box-sizing: border-box;
   background: rgba($white,.9);
-  p:last-child{
+  p:last-child {
     padding-top: 1.2rem;
     border-top: 1px solid $site-border-color;
     text-transform: uppercase; 
   }
-  a{
+  a {
     color:$gray;
     border-color: $requirements-border-color;
   }
 }
 
-footer{
+footer {
   width: 60%;
-  padding: 1.25rem 2rem;
-  margin-top: 14.2%;
+  padding: 2rem 3rem;
   margin-bottom: 10%;
   margin-left: 8%;
+  font-size: 1.25rem;
   background: $footer-bg;
-  a{
-    padding: 1px;
+
+  a {
+    padding: 3px;
     color: $gray;
     text-decoration: none;
     border-bottom: 1px solid $footer-border-color;
-    &:hover{
+    &:hover {
       border-color: $site-a-border-color-hover;
     }
   }
@@ -183,16 +194,20 @@ aside {
     left: 0;
     width: 100%;
     bottom: auto;
-    background:rgba($aside-bg,.9); 
-    .aside-list-item {
-      margin:  6rem 4rem;
-    }
+    padding: 18% 16% 16%;
+    box-sizing: border-box;
+    background:rgba($aside-bg,.9);
+    .aside-list-item{
+      margin-bottom: 20%;
+    } 
+
     h3 {
       font-family: "tablet-gothic-condensed", "arial narrow", arial, verdana, sans-serif;
       font-weight: 100;
       font-size: 2.25rem;
       margin: 1rem 0;
     }
+
     a {
       padding: 1px;
       border-bottom: 1px solid $footer-border-color;
@@ -210,14 +225,14 @@ aside {
       display: block;
       margin: 1rem 0;
       color: $footer-border-color;
-      font-size: 1rem;
+      font-size: 1.25rem;
       /*font-weight: 400;*/
       font-weight: 600;
     }
   }
 }
 
-aside::after{
+aside::after {
   content: "";
   position: fixed;
   top: 0;
@@ -225,4 +240,58 @@ aside::after{
   right: 0;
   width: 30%;
   background: $bg-after-color;
+}
+
+@media screen and (max-width:767px){
+  aside::after{
+    display: none;
+  }
+  .container{
+    flex-direction: column;
+    header{
+      h1{
+        font-size: 2.25rem;
+        line-height: 1.5;
+      }
+      p:first-child{
+        font-size:1.25rem;
+      }
+    }
+  }
+  main {
+    width: 100%;
+  }
+  aside {
+    width: 100%;
+  }
+
+  .article-container {
+    flex-direction: column;
+  }
+
+  .participation {
+    margin-right: 0;
+  }
+
+  .requirements {
+    margin-right: 0;
+  }
+
+  .introduced {
+    margin: 0;
+  }
+
+  .benefits {
+    margin: 0;
+  }
+
+  .article-main {
+    padding: 0;
+  }
+
+  aside .aside-list {
+    position: relative;
+    top:0;
+  }
+
 }
